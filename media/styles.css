@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.chat-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border:#007bff
+}
+
+.chat-box {
+    padding: 20px;
+    min-height:70%;
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+    scrollbar-width: none;
+}
+
+.input-container {
+    padding: 10px;
+    bottom:20px;
+}
+
+.chat-textarea {
+    width: 95%;
+    max-height: 400px; /* Fixed height */
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* New styles for commands */
+.command-comment {
+    background-color: #ffeb3b; /* Yellow background for comment */
+    color: #000;
+}
+
+.command-debug {
+    background-color: #f44336; /* Red background for debug */
+    color: #fff;
+}
+
+.command-refactor {
+    background-color: #4caf50; /* Green background for refactor */
+    color: #fff;
+}
+
+.command-suggest {
+    background-color: #46c1da; /* Blue background for refactor */
+    color: #fff;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message {
+    max-width: 100%; /* Ensure text messages take the full width */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #2c2c2c;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    color: #e0e0e0;
+}
+
+.language-label {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bot-message {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    color: #e0e0e0;
+}
+
+.bot-message pre {
+    position: relative;
+    margin-top: 10px;
+    background-color: #2c2c2c;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 100%; /* Set a fixed width */
+    max-height: 400px; /* Set a fixed height */
+    overflow: auto; /* Enable scrolling if content exceeds fixed height */
+}
+
+.bot-message code {
+    display: block;
+    padding: 10px;
+    white-space: pre-wrap; /* Ensure code wraps within the block */
+    position: relative;
+    margin-top: 10px;
+}
+
+.move-button,
+.copy-button {
+    /* position: relative;
+    top: 10px;
+    right: 10px; */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.bot-message code:hover .copy-button {
+    opacity: 1; /* Show on hover */
+}
+
+.move-button:hover,
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.user-message {
+    background-color: #2c2c2c;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    color: #e0e0e0;
+}
+
+
+.send-icon {
+    padding: 10px 15px;
+    width: 24px;
+    height: 24px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-icon:hover {
+    background-color: #0056b3;
+}
+
+.api-key-dropdown {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    width:60%;
+    max-width: 300px;
+}
